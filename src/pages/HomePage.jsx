@@ -1,10 +1,10 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"; //eslint-disable-line
 
 export default function HomePage() {
   return (
-    <div className="home-page">
-      <h1>This is the Home page</h1>
+    <div className="home-page" style={{ textAlign: "center" }}>
+      <h1>Ciao, bella</h1>
     </div>
   );
 }

@@ -1,9 +1,23 @@
 // filepath: c:\Users\sk8te\Desktop\book-recommender-frontend\tailwind.config.js
+import defaultTheme from "tailwindcss/defaultTheme";
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        parchment: "#fdf6e3", // Light parchment background
+        wood: "#deb887", // Warm wood tone
+        leather: "#8b4513", // Dark leather tone
+        ink: "#333333", // Dark ink for text
+      },
+      fontFamily: {
+        serif: ["Merriweather", ...defaultTheme.fontFamily.serif], // Classic serif font
+      },
+      backgroundImage: {
+        "parchment-texture": "url('/assets/parchment.jpg')", // Add a subtle texture
+      },
+    },
   },
-  darkMode: "class", // Enable dark mode
   plugins: [],
 };
