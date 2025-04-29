@@ -7,7 +7,7 @@ import BookDetailsPage from "../pages/BookDetailsPage";
 import CollectionPage from "../pages/CollectionPage";
 import LoginPage from "../pages/LoginPage";
 import SignupPage from "../pages/SignupPage";
-// import "../styles/App.css";
+import "../styles/tailwind.css"; // Import your custom Tailwind CSS file
 
 export default function AppRouter() {
   return (

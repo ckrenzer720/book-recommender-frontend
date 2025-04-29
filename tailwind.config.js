@@ -15,7 +15,7 @@ export default {
         serif: ["Merriweather", ...defaultTheme.fontFamily.serif], // Classic serif font
       },
       backgroundImage: {
-        "parchment-texture": "url('/assets/parchment.jpg')", // Add a subtle texture
+        "parchment-texture": "url('https://via.placeholder.com/150')", // Add a subtle texture
       },
     },
   },
