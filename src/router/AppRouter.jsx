@@ -11,11 +11,14 @@ import "../styles/tailwind.css"; // Import your custom Tailwind CSS file
 
 export default function AppRouter() {
   return (
-    <div className="min-h-screen bg-parchment-texture bg-parchment text-ink font-serif">
-      <div className="min-h-screen bg-parchment-texture bg-parchment text-ink font-serif">
-        <h1 className="text-3xl font-bold">Old-School Library</h1>
-        <p className="text-lg">This is a test of the custom Tailwind theme.</p>
-      </div>
+    <div className="min-h-screen text-ink font-serif">
+      {/* Header */}
+      <header className="bg-wood text-parchment py-6 text-center shadow-md">
+        <h1 className="text-4xl font-bold">Old-School Library</h1>
+        <p className="text-lg mt-2">Explore timeless classics and more!</p>
+      </header>
+
+      {/* Main Content */}
       <main className="p-6">
         <Router>
           <Routes>
@@ -27,13 +30,11 @@ export default function AppRouter() {
             <Route path="/signup" element={<SignupPage />} />
           </Routes>
         </Router>
-        <p className="text-lg">
-          Welcome to the library! Browse through our collection of timeless
-          classics.
-        </p>
       </main>
-      <footer className="bg-wood text-parchment p-4 text-center">
-        <p>&copy; 2025 Conner's mind at work</p>
+
+      {/* Footer */}
+      <footer className="bg-wood text-parchment py-4 text-center">
+        <p className="text-sm">&copy; 2025 Conner's mind at work</p>
       </footer>
     </div>
   );
